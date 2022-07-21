@@ -21,7 +21,7 @@ To run in a native environment, **ensure OpenJDK 18.0.1.1+ is installed**.
 
 Then, in the project root directory, run the following command:
 
-```aidl
+```shell
 connect4  $  ./gradlew run --console=plain
 ```
 
@@ -33,13 +33,13 @@ Then, in the project root directory, run the following commands:
 
 1. Build the Docker image:
 
-```aidl
+```shell
 connect4  $ docker build --rm -t echen/connect4:latest .
 ```
 
 2. Run the Docker image in interactive mode:
 
-```aidl
+```shell
 connect4  $ docker run -it --name connect4 echen/connect4:latest
 ```
 
