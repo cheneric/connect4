@@ -17,7 +17,7 @@ There are 2 ways to run the game:
 
 #### 1. Run natively
 
-To run in a native environment, **ensure OpenJDK 18.0.1.1+ is installed**.
+To run in a native environment, **ensure OpenJDK 17+ is installed**.
 
 Then, in the project root directory, run the following command:
 
@@ -34,13 +34,13 @@ Then, in the project root directory, run the following commands:
 1. Build the Docker image:
 
 ```shell
-connect4  $ docker build --rm -t echen/connect4:latest .
+connect4  $ docker build --rm -t chen.eric/connect4:latest .
 ```
 
 2. Run the Docker image in interactive mode:
 
 ```shell
-connect4  $ docker run -it --name connect4 echen/connect4:latest
+connect4  $ docker run -it --rm --name connect4 chen.eric/connect4:latest
 ```
 
 ### Gameplay
